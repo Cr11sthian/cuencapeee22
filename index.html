@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planificación de Actividades</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <label for="actividad">¿Qué hacemos?</label>
+    <select id="actividad" onchange="seleccionarActividad()">
+      <option value="Brunchpe">Brunchpe</option>
+      <option value="Almuerzope">Almuerzope</option>
+      <option value="Museo">Museo</option>
+      <option value="cenape">cenape</option>
+      <option value="Nadape">Nadape</option>
+    </select>
+
+    <label for="lugares">¿En qué lugar?</label>
+    <select id="lugares"></select>
+
+    <label for="dia">¿Qué día?</label>
+    <select id="dia">
+      <option value="Jueves">Jueves</option>
+      <option value="Viernes">Viernes</option>
+      <option value="Sábado">Sábado</option>
+      <option value="Domingo">Domingo</option>
+    </select>
+
+    <button onclick="finalizarSeleccion()">Finalizar Selección</button>
+    <button onclick="generarCronograma()">Generar Cronograma</button>
+
+    <div id="historial" class="historial"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

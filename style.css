@@ -1,0 +1,21 @@
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+select, button {
+  margin-top: 5px;
+}
+
+.historial {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
